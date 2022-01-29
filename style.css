@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+:root {
+	--font-family: 'Lato', sans-serif;
+	--font-size: 2vh;
+	--color-banner-font: #fff;
+	--border-radius-input: 5px;
+	--border-input: 2px solid red;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.wrapper {
+	display: block;
+	max-width: 535px;
+	background-color: rgb(62, 65, 233);
+
+	width: 80%;
+	margin: 5vh auto;
+	box-shadow: 0 5px 12px rgb(87, 87, 87);
+}
+.banner {
+	background-color: rgb(62, 65, 233);
+	font-family: var(--font-family);
+	text-transform: uppercase;
+}
+.banner h1 {
+	text-align: center;
+	line-height: 10vh;
+	font-size: 8vh;
+	color: rgb(243, 10, 10);
+}
+.banner p {
+	line-height: 5vh;
+	color: #fff;
+}
+.bottom {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding: 30px 20px;
+}
+.bottom * {
+	width: 80%;
+	margin: 15px;
+	text-align: center;
+}
+#cena {
+	border-radius: var(--border-radius-input);
+	transition: 0.3s;
+}
+#cena:hover {
+	border: var(--border-input);
+}
+label {
+	color: #fff;
+}
+#osoby {
+	border-radius: var(--border-radius-input);
+	transition: 0.3s;
+}
+#osoby:hover {
+	border: var(--border-input);
+}
+input {
+	height: 3vh;
+}
+#napiwek {
+	height: 3vh;
+	border-radius: var(--border-radius-input);
+	transition: 0.3s;
+}
+#napiwek:hover {
+	border: var(--border-input);
+}
+#napiwek option {
+	text-align: center;
+}
+.result {
+	padding: 10px;
+	border: 2px solid red;
+	background-color: red;
+	color: #fff;
+	font-size: var(--font-size);
+	border-radius: 20px;
+	transition: 0.2s;
+}
+.result:hover {
+	background-color: #fff;
+	color: red;
+	cursor: pointer;
+}
+.wynik-info {
+	margin: 0 auto;
+	display: none;
+	color: #fff;
+}
+.error {
+	display: none;
+	color: rgb(251, 134, 134);
+	font-size: 3vh;
+	margin: 0 auto;
+	text-align: center;
+}
